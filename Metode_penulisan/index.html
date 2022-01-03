@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Penulisan CSS bisa melalui 3 cara</h1>
+
+    <h2>INLINE</h2>
+    <p style="color: red;">teks ini ditulis dengan style css berupa inline dengan menambahkan atribut style pada tag</p>
+
+    <h3>INTERNAL</h3>
+    <p>Kalau teks ini ditulis dengan style css metode internal dimana pemberian style di tulis di < head > menggunakan tag < style > </style></head></p>
+    <p>Coba diperhatikan padahal jika kita menggunakan style css metode internal maka dia akan mempengaruhi semua selector pada 1 halaman. Namun sekarang pertanyaannya adalah mengapa tag P pada INLINE diatas tidak ikut berubah menjadi warna biru ??</p>
+    <p>Hal ini karena pada CSS terdapat sebuah hirarki prioritas dimana prioritas pertama adalah metode <b>INLINE, INTERNAL dan terakhir adalah EKSTERNAL</b></p>
+    <p>Oleh karena itu jika dilihat dengan paragraf inline sebenarnya memiliki 2 opsi warna teks yaitu biru dan merah. biru didapatkan dari pemberian style secara INTERNAL dan merah pemberian secara INLINE. Namun, yang ditampilkan oleh HTML adalah warna Merah karena ada prioritas tadi</p>
+
+    <h4>EKSTERNAL</h4>
+    <p>Teks ini walau berada pada subbab penulisan secara EKSTERNAL namun warna teks ini sama seperti teks INTERNAl. Hal ini karena jika kita memberikan style warna teks menggunakan metode eksternal maka tetap saja warna yang akan dimunculkan pada HTML adalah warna biru karena INTERNAL lebih di prioritaskan daripada EKSTERNAL. Oleh karena itu kita akan memberi style pada selector H4 saja </p>
+    <p>Jika kalian ingin melihat coding css nya dapat membuka di style.css pada folder metode_penulisan</p>
+    <p>Ketika kita ingin membuat coding style berada diluar program HTML kita harus menghubungkannya dengan HTML dengan cara menggunakan tag < link > yang diletakkan pada < head > seperti contoh diatas</p>
+
+</body>
+</html>
